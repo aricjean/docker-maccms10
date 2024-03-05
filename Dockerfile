@@ -7,6 +7,8 @@
 FROM php:7.4-apache
 
 COPY docker-entrypoint.sh /entrypoint.sh
+COPY ./template /opt/maccms10/template
+COPY ./data /data
 
 ENV REPO_URL https://github.com/magicblack/maccms10.git
 
